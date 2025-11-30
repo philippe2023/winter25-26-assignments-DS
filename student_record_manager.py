@@ -95,6 +95,8 @@ students.append(student2)
 students.append(student3)
 students.append(student4)
 
+print("STUDENT RECORD MANAGER - RESULTS")
+
 print(f"List of Students: {[student.name for student in students]}")
 
 
@@ -118,4 +120,5 @@ for student in students:
 
 print("\nUnique grades for each student:")
 for student in students:
-    print(f"{student.name}: {student.get_unique_grades()}")
+    print(f"\nStudent: {student.name} (ID: {student.student_id})")
+    print(f"{student.name} unique grades: {student.get_unique_grades()}")
